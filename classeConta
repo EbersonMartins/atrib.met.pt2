@@ -1,0 +1,42 @@
+public class Conta {
+
+    public String cpf;
+    public String numBanco;
+    public double saldo;
+    public double saque;
+    public double deposito;
+    public String tipoCliente;
+
+
+    public Conta (){
+        this.cpf = cpf = "0";
+        this.numBanco = numBanco = "0";
+        this.saldo = saldo = 100;
+
+    }
+
+    public double bonificacao(){
+
+        if (tipoCliente == "S" ){
+            return saldo * 0.1;
+        } else {
+            return saldo * 0.05;
+        }
+
+
+    }
+
+    public double retirada(){
+
+        return saldo - saque;
+
+    }
+
+    public double alocando (){
+
+        return saldo + deposito;
+
+    }
+
+
+}
